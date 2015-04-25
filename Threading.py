@@ -77,4 +77,6 @@ q.join()
 
 
 # Calculates and prints how long it took to do every job assigned. Using threads the time is fractional.
-print('Entire job took:',time.time() - start)
+print('With threading, entire job took:',time.time() - start,"seconds")
+print("Job was estimated to take 100 seconds without threading.")
+print("With threading, this job was done",100/(time.time()-start),"times faster")
